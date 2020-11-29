@@ -7,10 +7,6 @@ GROUP_ID = -()      # Айди группы берем из линка на гр
 TIMER = 60      # Время как часто бот будет проверять наличие новых постов
 
 
-
-
-
-
 k=[]
 
 def main():
@@ -47,11 +43,6 @@ def main():
                 k.append(response['items'][0]['id'])
             else:
                 pass
-
-            
-            
-            
-            
             
         except:
             print('nope')
