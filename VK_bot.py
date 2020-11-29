@@ -43,8 +43,7 @@ def main():
                 mes= response['items'][0]['text']
                 att1= response['items'][0]['owner_id']
                 att2= response['items'][0]['attachments'][0]['photo']['id']
-                print(att1,att2)
-                print(vk.wall.post(owner_id=GROUP_ID,message=mes,attachments = [ 'photo{}_{}'.format(att1, att2) ]))
+                vk.wall.post(owner_id=GROUP_ID,message=mes,attachments = [ 'photo{}_{}'.format(att1, att2) ]) #Что бы добавить еще одну группу нужно скопировать эту строчку ниже, но уже с другим GROUP_ID
                 k.append(response['items'][0]['id'])
             else:
                 pass
